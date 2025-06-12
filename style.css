@@ -1,0 +1,87 @@
+a{text-decoration: none;}  
+#contenido1{background: rgb(179, 211, 179);width: 20%;}
+#cuerpo{margin:2%;padding:1px;height:1000px}
+
+.e{text-align: center;}
+a{color:rgb(13, 103, 182)}
+
+footer {/*margin-top: auto; empuja el <footer> hacia abajo, ocupando todo el espacio disponible y logrando que quede pegado al final de la página.
+background: #eee; le da un color de fondo gris claro al footer.
+text-align: center; centra el texto dentro del footer.
+padding: 10px 0; agrega espacio arriba y abajo del contenido del footer. 
+sirve sirve para que el footer siempre quede abajo, incluso si la página tiene poco contenido, y le da un estilo básico.*/
+  background-color: #a5ce44;
+  padding: 10px;
+  text-align: center;
+  color: rgb(33, 26, 26);
+  font-size: 7px;
+  margin-top: auto;
+  background: #eee;
+  text-align: center;
+  padding: 10px 0;}
+
+html, body {/*Hace que tanto el <html> como el <body> ocupen el 100% de la altura de la ventana.
+Elimina los márgenes y rellenos por defecto del navegador.
+Esto es útil para asegurarse de que el contenido ocupe todo el espacio disponible y no haya espacios en blanco inesperados.
+*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {/*min-height: 100vh; asegura que el <body> tenga al menos la altura completa de la ventana (viewport).
+display: flex; convierte el <body> en un contenedor flexbox.
+flex-direction: column; organiza los elementos hijos del <body> (header, contenido, footer) en una columna vertical.*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed; /* Fixed navigation bar */
+  }
+ 
+  li {
+    float: left;
+  }
+ 
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+  /* Change the link color to #111 (black) on hover */
+  li a:hover:not(.active) {
+    background-color: rgb(196, 174, 196);
+  }
+ 
+  .active {
+    background-color: rgb(228, 220, 200);
+  }
+.flex-container {/*  el contenedor se alineará al centro de la página. */
+   margin: 60px auto 0 auto; /* Deja espacio arriba para el menú fijo */
+   display: flex;
+  justify-content: center; /* Centra las tablas horizontalmente */
+  gap: 20px; /* Espacio entre las tablas, opcional */
+   width: fit-content;
+}
+
+
+#contenido1{/*  Estos estilos aseguran que los elementos tengan un ancho del 50% del contenedor padre y se alineen uno al lado del otro. */
+  width: 100%;
+  float: left;
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+}
