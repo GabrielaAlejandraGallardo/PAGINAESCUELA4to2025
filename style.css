@@ -38,7 +38,102 @@ flex-direction: column; organiza los elementos hijos del <body> (header, conteni
 }
 
 
+.menu {
+  width: 20px;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+}
 
+.menu:hover,
+.menu:focus-within {
+  width: 300px;
+}
+
+.menu ul {
+  flex-direction:row;
+}
+
+.menu a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu{
+  width: 20%;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+  overflow: hidden; 
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+ ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: none;
+  position: static;
+}
+
+li {
+  position: relative;
+}
+
+.menu > ul > li {
+  float: none;
+}
+
+.menu a {
+  display:list-item;
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.menu a:hover, nav .active {
+  background: #eee;
+  color: #222;
+}
+
+.menu li ul {
+  display: none;
+  position: relative;
+  left: 0;
+  top: 100%;
+  min-width: 60px;
+  background: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 200;
+  flex-direction: column;
+}
+
+.menu li:hover > ul {
+  display: flex;
+}
+
+.menu li ul li {
+  width: 40%;
+  height: 100%;
+}
+
+.menu li ul a {
+  padding: 12px 20px;
+  color: #fff;
+  background: #333;
+  border-bottom: 1px solid #444;
+} 
+
+.menu li ul a:hover {
+  background: #eee;
+  color: #222;
+ 
+ 
+}
+/*
 ul {
     list-style-type: none;
     margin: 0;
@@ -46,7 +141,7 @@ ul {
     overflow: hidden;
     background-color: #333;
     width: 100%;
-    position: fixed; /* Fixed navigation bar */
+    position: fixed; /* Fixed navigation bar 
   }
  
   li {
@@ -60,8 +155,6 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
- 
-  /* Change the link color to #111 (black) on hover */
   li a:hover:not(.active) {
     background-color: rgb(196, 174, 196);
   }
@@ -69,6 +162,8 @@ ul {
   .active {
     background-color: rgb(228, 220, 200);
   }
+*/
+  
 .flex-container {/*  el contenedor se alineará al centro de la página. */
    margin: 60px auto 0 auto; /* Deja espacio arriba para el menú fijo */
    display: flex;
@@ -79,7 +174,7 @@ ul {
 
 
 #contenido1{/*  Estos estilos aseguran que los elementos tengan un ancho del 50% del contenedor padre y se alineen uno al lado del otro. */
-  width: 100%;
+  width: 50%;
   float: left;
   padding: 30px;
   margin: 10px;
