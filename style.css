@@ -35,6 +35,7 @@ flex-direction: column; organiza los elementos hijos del <body> (header, conteni
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #c5c8cf;
 }
 
 
@@ -184,3 +185,13 @@ ul {
   background-color: #7d879b;
 }
 h,p{text-align: center;}
+
+.piePagina {/*  El pie de página tendrá un fondo gris claro, texto centrado y un tamaño de fuente más pequeño. */
+  background-color: #7e93e6;
+  text-align: center;
+  color: rgb(33, 26, 26);
+  font-size: 20px;
+  width: 1300px;
+  margin: 10px;
+}
+td{padding: 10px;}
