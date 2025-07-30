@@ -170,6 +170,7 @@ ul {
   justify-content: center; /* Centra las tablas horizontalmente */
   gap: 20px; /* Espacio entre las tablas, opcional */
    width: fit-content;
+   background-color: #a5ce44;
 }
 
 
@@ -179,4 +180,5 @@ ul {
   padding: 30px;
   margin: 10px;
   text-align: center;
+  background-color: #a5ce44;
 }
