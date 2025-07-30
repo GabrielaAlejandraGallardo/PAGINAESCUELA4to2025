@@ -167,18 +167,20 @@ ul {
 .flex-container {/*  el contenedor se alineará al centro de la página. */
    margin: 60px auto 0 auto; /* Deja espacio arriba para el menú fijo */
    display: flex;
-  justify-content: center; /* Centra las tablas horizontalmente */
-  gap: 20px; /* Espacio entre las tablas, opcional */
+   justify-content: center; /* Centra las tablas horizontalmente */
+   gap: 20px; /* Espacio entre las tablas, opcional */
    width: fit-content;
-   background-color: #a5ce44;
+   background-color: #959dbf;
+  
+  
 }
 
 
 #contenido1{/*  Estos estilos aseguran que los elementos tengan un ancho del 50% del contenedor padre y se alineen uno al lado del otro. */
-  width: 50%;
-  float: left;
-  padding: 30px;
-  margin: 10px;
+  width: 80%;
+  padding: 60px;
+  margin: 60px;
   text-align: center;
-  background-color: #a5ce44;
+  background-color: #7d879b;
 }
+h,p{text-align: center;}
