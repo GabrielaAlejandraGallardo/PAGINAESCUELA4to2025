@@ -5,21 +5,6 @@ a{text-decoration: none;}
 .e{text-align: center;}
 a{color:rgb(13, 103, 182)}
 
-footer {/*margin-top: auto; empuja el <footer> hacia abajo, ocupando todo el espacio disponible y logrando que quede pegado al final de la página.
-background: #eee; le da un color de fondo gris claro al footer.
-text-align: center; centra el texto dentro del footer.
-padding: 10px 0; agrega espacio arriba y abajo del contenido del footer. 
-sirve sirve para que el footer siempre quede abajo, incluso si la página tiene poco contenido, y le da un estilo básico.*/
-  background-color: #a5ce44;
-  padding: 10px;
-  text-align: center;
-  color: rgb(33, 26, 26);
-  font-size: 7px;
-  margin-top: auto;
-  background: #eee;
-  text-align: center;
-  padding: 10px 0;}
-
 html, body {/*Hace que tanto el <html> como el <body> ocupen el 100% de la altura de la ventana.
 Elimina los márgenes y rellenos por defecto del navegador.
 Esto es útil para asegurarse de que el contenido ocupe todo el espacio disponible y no haya espacios en blanco inesperados.
@@ -32,7 +17,7 @@ Esto es útil para asegurarse de que el contenido ocupe todo el espacio disponib
 body {/*min-height: 100vh; asegura que el <body> tenga al menos la altura completa de la ventana (viewport).
 display: flex; convierte el <body> en un contenedor flexbox.
 flex-direction: column; organiza los elementos hijos del <body> (header, contenido, footer) en una columna vertical.*/
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   background: #c5c8cf;
@@ -172,26 +157,42 @@ ul {
    gap: 20px; /* Espacio entre las tablas, opcional */
    width: fit-content;
    background-color: #959dbf;
+   border: #333 solid 2px;
+   margin-block:10px ;
   
   
 }
 
 
-#contenido1{/*  Estos estilos aseguran que los elementos tengan un ancho del 50% del contenedor padre y se alineen uno al lado del otro. */
-  width: 80%;
-  padding: 60px;
-  margin: 60px;
+#contenido1{/*  Estos estilos aseguran que los elementos tengan un ancho del 70% del contenedor padre y se alineen uno al lado del otro. */
+  width: 70%;
+  padding: 100px;
+  margin: 70px;
   text-align: center;
   background-color: #7d879b;
+  gap: 5px;
 }
 h,p{text-align: center;}
 
 .piePagina {/*  El pie de página tendrá un fondo gris claro, texto centrado y un tamaño de fuente más pequeño. */
-  background-color: #7e93e6;
   text-align: center;
   color: rgb(33, 26, 26);
   font-size: 20px;
   width: 1300px;
-  margin: 10px;
-}
+  margin: 5px;
+/*margin-top: auto; empuja el <footer> hacia abajo, ocupando todo el espacio disponible y logrando que quede pegado al final de la página.
+background: #eee; le da un color de fondo gris claro al footer.
+text-align: center; centra el texto dentro del footer.
+padding: 10px 0; agrega espacio arriba y abajo del contenido del footer. 
+sirve sirve para que el footer siempre quede abajo, incluso si la página tiene poco contenido, y le da un estilo básico.*/
+  background-color: #a5ce44;
+  padding: 10px 0;
+  text-align: center;
+  color: rgb(33, 26, 26);
+  font-size: 17px;
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0;}
+
+
 td{padding: 10px;}
