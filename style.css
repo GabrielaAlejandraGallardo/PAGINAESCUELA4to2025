@@ -169,9 +169,19 @@ ul {
   padding: 100px;
   margin: 70px;
   text-align: center;
-  background-color: #7d879b;
+  background-color: #70ad54;
   gap: 5px;
 }
+
+#contenidoPaginaInicio {/*  Este estilo asegura que el contenido de la página de inicio tenga un ancho del 70% del contenedor padre y se alinee al centro. */
+  width: 70%;
+  padding: 100px;
+  margin: 70px;
+  text-align: center;
+  background-color: #39b42c;
+  gap: 5px;
+}
+
 h,p{text-align: center;}
 
 .piePagina {/*  El pie de página tendrá un fondo gris claro, texto centrado y un tamaño de fuente más pequeño. */
