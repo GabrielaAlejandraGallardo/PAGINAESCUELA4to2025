@@ -17,7 +17,7 @@ Esto es útil para asegurarse de que el contenido ocupe todo el espacio disponib
 body {/*min-height: 100vh; asegura que el <body> tenga al menos la altura completa de la ventana (viewport).
 display: flex; convierte el <body> en un contenedor flexbox.
 flex-direction: column; organiza los elementos hijos del <body> (header, contenido, footer) en una columna vertical.*/
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: #c5c8cf;
@@ -86,7 +86,7 @@ li {
 }
 
 .menu li ul {
-  display: none;
+  display:list-item;
   position: relative;
   left: 0;
   top: 100%;
@@ -185,7 +185,7 @@ background: #eee; le da un color de fondo gris claro al footer.
 text-align: center; centra el texto dentro del footer.
 padding: 10px 0; agrega espacio arriba y abajo del contenido del footer. 
 sirve sirve para que el footer siempre quede abajo, incluso si la página tiene poco contenido, y le da un estilo básico.*/
-  background-color: #a5ce44;
+  background-color: #5a6ad3;
   padding: 10px 0;
   text-align: center;
   color: rgb(33, 26, 26);
